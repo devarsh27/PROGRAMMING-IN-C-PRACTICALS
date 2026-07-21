@@ -1,0 +1,25 @@
+#include <stdio.h>
+
+
+int calculateSimpleInterest(int principal, int time, int rate) {
+	
+	return (principal * time * rate) / 100;// Complete the function
+	
+}
+
+int main() {
+	int principal, time, rate, simpleInterest;
+    
+    
+    scanf("%d", &principal);
+	scanf("%d", &time);
+	scanf("%d", &rate);
+    
+    
+
+	simpleInterest = calculateSimpleInterest(principal, time, rate);
+	
+	printf("%d\n", simpleInterest);
+	
+	return 0;
+}
